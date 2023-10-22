@@ -148,18 +148,112 @@ The energy correction term should be
 1. $\delta\lambda_1 = 0$
 2. $\delta\lambda_2 = -\frac{ \left(  a_i^{2} + a_r^{2} + b_i^{2} + b_r^{2} \right)}{(E_2 - E_1)}$
 3. $\delta\lambda_3 = \frac{ \left(  a_i^{2} + a_r^{2} + b_i^{2} + b_r^{2} \right)}{(E_2 - E_1)}$
+
+Let's try to apply degenerate energy perturbation theory.
+We notice for vector spanned by \{ [1 0 0] , [0 1 0]\},
+we have energy degeneracy for $A_0$.
+
+According to the paper, we need to find a special pair of linear combinations of
+the above mentioned basis vectors so that we diagonalize $A_1$ in this subspace.
+However, we could not as $A_1$ is already diagnoalized and degenerate.
 "
 
-# ╔═╡ 8443f122-db68-4807-a21d-5970335009c3
+# ╔═╡ 524b736b-fbb7-4425-a55a-ee7a73bba776
+A₁[1:2,1:2]
 
+# ╔═╡ 8443f122-db68-4807-a21d-5970335009c3
+md"
+In this case, the paper does not tell us what to do.
+I found [Gottfried Chapter 3.7](https://books.google.co.jp/books/about/Quantum_Mechanics_Fundamentals.html) to be extremely helpful.
+Using (273) directly gives us the effective Hamiltonian of a lower dimension (the dimension of degenerate subspace).
+Reading off the (272) you could immediately see that the eigenvalue of this effective hamiltonian is the energy change from original Hamiltonian.
+"
 
 # ╔═╡ 69f6c0fa-b5e4-45e1-8e5c-5e5b5cfd5bec
-
+Heff = Matrix(simplify.([ A₁[i,3]*A₁[3,j]/(E₁ - E₂) for i in 1:2, j in 1:2 ]))
 
 # ╔═╡ cdbde18f-c4d4-494e-b953-851fa07edc74
-
+simplify(det(Heff - λ * Matrix(I,2,2)))
 
 # ╔═╡ e0ae1294-6efb-4b4a-9e20-292064c940cf
+md"
+It's obvious that one solution is $λ = 0$ and the other is $λ = \frac{|a|^2 + |b|^2}{E_2 - E_1}$
+This matches our exact calculuation above.
+"
+
+# ╔═╡ b97425a6-6538-4fc5-82de-26475275a1f8
+
+
+# ╔═╡ a4f9ac12-a595-46d7-b8cc-870c27c4fa9e
+
+
+# ╔═╡ ea7a825f-a545-4527-975b-ef01dc92b5c5
+
+
+# ╔═╡ 0cc39cdf-70d3-4a09-83e1-2296bc3a62ab
+
+
+# ╔═╡ d3daec1c-6972-4024-b3e0-8a1bdc384a1d
+
+
+# ╔═╡ 0767c090-9177-42e5-bf61-3738b293bcfb
+
+
+# ╔═╡ 04e8d2fa-fe02-4baf-ac0d-c6c28bfd8aee
+
+
+# ╔═╡ 68afa6ad-21d4-48fc-81da-5047c208bc71
+
+
+# ╔═╡ 5c82c343-5d9d-4399-99f5-a9a5c9bfc9bb
+
+
+# ╔═╡ bd865d0b-79d0-433c-879d-a819dd8f0b69
+
+
+# ╔═╡ 32b0b550-a4d6-495e-b6ae-d00b2e527d5b
+
+
+# ╔═╡ 2482a924-f3d7-405f-983e-8b4a2c378ae2
+
+
+# ╔═╡ c4a98565-d14f-4548-b4a3-852047bbdd1d
+
+
+# ╔═╡ 4439df44-d75a-473d-957d-298d549d5854
+
+
+# ╔═╡ 7fb1c334-76f5-4419-9db9-e57ae7e26fa1
+
+
+# ╔═╡ eb7e93de-291a-41ce-92f9-3e7e68369802
+
+
+# ╔═╡ 7e3ab2f8-75f2-44c0-a3d1-12d0142005a0
+
+
+# ╔═╡ d41d54fd-f268-42ac-8b87-48c753bbbd81
+
+
+# ╔═╡ 0085976f-3f40-42bb-98f0-5e11264aa93a
+
+
+# ╔═╡ 8e514b0f-1cee-4be6-81c4-32afe4bcdaba
+
+
+# ╔═╡ f80d2269-cac2-4231-bacc-788f2a61008f
+
+
+# ╔═╡ cee00905-abb6-4dcc-993e-4c396f4a1c6b
+
+
+# ╔═╡ 9459403d-b5d9-41ae-9761-fd4d2f485d81
+
+
+# ╔═╡ e416e726-ca0a-4b21-af27-24059803dac4
+
+
+# ╔═╡ 5d68dccc-e0a1-4e83-8319-437473c98916
 
 
 # ╔═╡ Cell order:
@@ -188,7 +282,33 @@ The energy correction term should be
 # ╠═788a1d67-cf73-4d0e-bf09-28be4debcdd3
 # ╠═bd97e7fa-0979-4218-9454-f9930b39e154
 # ╟─30775d34-c171-4639-8d28-e56014b00cd6
-# ╠═8443f122-db68-4807-a21d-5970335009c3
+# ╠═524b736b-fbb7-4425-a55a-ee7a73bba776
+# ╟─8443f122-db68-4807-a21d-5970335009c3
 # ╠═69f6c0fa-b5e4-45e1-8e5c-5e5b5cfd5bec
 # ╠═cdbde18f-c4d4-494e-b953-851fa07edc74
 # ╠═e0ae1294-6efb-4b4a-9e20-292064c940cf
+# ╠═b97425a6-6538-4fc5-82de-26475275a1f8
+# ╠═a4f9ac12-a595-46d7-b8cc-870c27c4fa9e
+# ╠═ea7a825f-a545-4527-975b-ef01dc92b5c5
+# ╠═0cc39cdf-70d3-4a09-83e1-2296bc3a62ab
+# ╠═d3daec1c-6972-4024-b3e0-8a1bdc384a1d
+# ╠═0767c090-9177-42e5-bf61-3738b293bcfb
+# ╠═04e8d2fa-fe02-4baf-ac0d-c6c28bfd8aee
+# ╠═68afa6ad-21d4-48fc-81da-5047c208bc71
+# ╠═5c82c343-5d9d-4399-99f5-a9a5c9bfc9bb
+# ╠═bd865d0b-79d0-433c-879d-a819dd8f0b69
+# ╠═32b0b550-a4d6-495e-b6ae-d00b2e527d5b
+# ╠═2482a924-f3d7-405f-983e-8b4a2c378ae2
+# ╠═c4a98565-d14f-4548-b4a3-852047bbdd1d
+# ╠═4439df44-d75a-473d-957d-298d549d5854
+# ╠═7fb1c334-76f5-4419-9db9-e57ae7e26fa1
+# ╠═eb7e93de-291a-41ce-92f9-3e7e68369802
+# ╠═7e3ab2f8-75f2-44c0-a3d1-12d0142005a0
+# ╠═d41d54fd-f268-42ac-8b87-48c753bbbd81
+# ╠═0085976f-3f40-42bb-98f0-5e11264aa93a
+# ╠═8e514b0f-1cee-4be6-81c4-32afe4bcdaba
+# ╠═f80d2269-cac2-4231-bacc-788f2a61008f
+# ╠═cee00905-abb6-4dcc-993e-4c396f4a1c6b
+# ╠═9459403d-b5d9-41ae-9761-fd4d2f485d81
+# ╠═e416e726-ca0a-4b21-af27-24059803dac4
+# ╠═5d68dccc-e0a1-4e83-8319-437473c98916
