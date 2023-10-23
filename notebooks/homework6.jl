@@ -184,29 +184,46 @@ This matches our exact calculuation above.
 # ╔═╡ b97425a6-6538-4fc5-82de-26475275a1f8
 md"
 # Problem 2: Scaling Laws for Hydrogen-like Atoms
+I found the following [lecture](https://ocw.mit.edu/courses/5-61-physical-chemistry-fall-2017/resources/hydrogen-atom-ii/) and [lecture note](https://ocw.mit.edu/courses/5-61-physical-chemistry-fall-2017/resources/mit5_61f17_lec21/).
+helpful when preparing this solution. We will largely follow it hence taking a semi-classical approach. This should be enough since
+we are only interested in the scaling laws.
 
-Recall a hydrogenlike atom is defined as a cation with only one valence shell electron.
+Recall a hydrogenlike atom is defined as a cation or an atom with only one valence shell electron.
+Since we only have one valence electron, we have a nice spherical symmetry.
+Due to the spherical symmetry of the system, we could separate the wavefunction of the valence electron into a radial part and an angular part.
+The angular part will be no different from the angular part of a hydrogen atom. It's the radial part that we need to solve.
 
-For the frist few properties, we rely on the effectiveness of Bohr model.
+Firstly, we need to adjust the potential energy term to account for the nuclear charge and angular momentum of the valence electron (think about merry-go-around).
+This gives us the following potential
+
+$V_{eff}(r) = -\frac{Z e^2}{4 \pi \epsilon_0 r} + \frac{l(l+1) \hbar^2}{2 m_e r^2}$
+
+where $Z$ is the nuclear charge, $e$ is the elementary charge, $\epsilon_0$ is the vacuum permittivity, $l$ is the angular momentum quantum number, $\hbar$ is the reduced Planck constant, and $m_e$ is the mass of the electron.
+
+Solving the Schrodinger Equation with this potential is a bit tedious. We will not do it here. It's largely similar to the process given in Griffiths' book. I have uploaded the relevant part
+in [zulip](https://zulip.hkust-gz.edu.cn/user_uploads/2/5a/XKZ7Y7-MVw_Rc3ye-0iaDncT/hydrogen-griffiths.pdf).
+
+For the sake of obtaining a scaling law, we resort back to the Bohr model.
 For details of derivation, please refer to [Libre Text](https://phys.libretexts.org/Bookshelves/Astronomy__Cosmology/Stellar_Atmospheres_(Tatum)/07%3A_Atomic_Spectroscopy/7.04%3A_The_Bohr_Model_of_Hydrogen-like_Atoms).
+I jump to conclusion directly.
 "
 
 # ╔═╡ a4f9ac12-a595-46d7-b8cc-870c27c4fa9e
 @variables n;
 
 # ╔═╡ ea7a825f-a545-4527-975b-ef01dc92b5c5
-function r_scaling(n::Num)
-    return n^2
-end
-
-# ╔═╡ 0cc39cdf-70d3-4a09-83e1-2296bc3a62ab
 function E_scaling(n::Num)
     return -1/n^2
 end
 
-# ╔═╡ d3daec1c-6972-4024-b3e0-8a1bdc384a1d
+# ╔═╡ 0cc39cdf-70d3-4a09-83e1-2296bc3a62ab
 function ΔE_scaling(n::Num)
     return simplify(E_scaling(n+1) - E_scaling(n))
+end
+
+# ╔═╡ d3daec1c-6972-4024-b3e0-8a1bdc384a1d
+function r_scaling(n::Num)
+    return n^2
 end
 
 # ╔═╡ 0767c090-9177-42e5-bf61-3738b293bcfb
@@ -215,7 +232,10 @@ end
 
 # ╔═╡ 04e8d2fa-fe02-4baf-ac0d-c6c28bfd8aee
 md"
-The transition dipole moment of ground state to $\ket{nl}$ is
+Let's pause for a moment and think about the physical meaning of the scaling laws we just derived.
+The energy scaling is helpful when we want to know the energy level which the electron in the atom is in given the ionization energy.
+
+To estimate the rest of the quantities, we need to rely on the trick to estimate the integral of two radial part of the wavefunction mentioned in the video lecture.
 "
 
 # ╔═╡ 68afa6ad-21d4-48fc-81da-5047c208bc71
@@ -259,9 +279,17 @@ The transition dipole moment of ground state to $\ket{nl}$ is
 
 # ╔═╡ f80d2269-cac2-4231-bacc-788f2a61008f
 
+md"
+For dipole polarizability, we use the formula provided in [paper](https://zulip.hkust-gz.edu.cn/user_uploads/2/41/xnM4iVujtuyerfNWW1BtaMjO/jhanwar1980.pdf) and our
+previous estimation of Transition dipole moment for adjacent states and energy splitting to get
+
+$\alpha ∼ \frac{(n^2)^2}{n^{-3}} = n^7$
+"
 
 # ╔═╡ cee00905-abb6-4dcc-993e-4c396f4a1c6b
-
+md"
+van der Waal's interaction coefficient???
+"
 
 # ╔═╡ 9459403d-b5d9-41ae-9761-fd4d2f485d81
 
