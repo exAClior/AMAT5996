@@ -182,25 +182,41 @@ This matches our exact calculuation above.
 "
 
 # ╔═╡ b97425a6-6538-4fc5-82de-26475275a1f8
+md"
+# Problem 2: Scaling Laws for Hydrogen-like Atoms
 
+Recall a hydrogenlike atom is defined as a cation with only one valence shell electron.
+
+For the frist few properties, we rely on the effectiveness of Bohr model.
+For details of derivation, please refer to [Libre Text](https://phys.libretexts.org/Bookshelves/Astronomy__Cosmology/Stellar_Atmospheres_(Tatum)/07%3A_Atomic_Spectroscopy/7.04%3A_The_Bohr_Model_of_Hydrogen-like_Atoms).
+"
 
 # ╔═╡ a4f9ac12-a595-46d7-b8cc-870c27c4fa9e
-
+@variables n;
 
 # ╔═╡ ea7a825f-a545-4527-975b-ef01dc92b5c5
-
+function r_scaling(n::Num)
+    return n^2
+end
 
 # ╔═╡ 0cc39cdf-70d3-4a09-83e1-2296bc3a62ab
-
+function E_scaling(n::Num)
+    return -1/n^2
+end
 
 # ╔═╡ d3daec1c-6972-4024-b3e0-8a1bdc384a1d
-
+function ΔE_scaling(n::Num)
+    return simplify(E_scaling(n+1) - E_scaling(n))
+end
 
 # ╔═╡ 0767c090-9177-42e5-bf61-3738b293bcfb
-
+# ~ 1/n^3
+ΔE_scaling(n)
 
 # ╔═╡ 04e8d2fa-fe02-4baf-ac0d-c6c28bfd8aee
-
+md"
+The transition dipole moment of ground state to $\ket{nl}$ is
+"
 
 # ╔═╡ 68afa6ad-21d4-48fc-81da-5047c208bc71
 
@@ -286,8 +302,8 @@ This matches our exact calculuation above.
 # ╟─8443f122-db68-4807-a21d-5970335009c3
 # ╠═69f6c0fa-b5e4-45e1-8e5c-5e5b5cfd5bec
 # ╠═cdbde18f-c4d4-494e-b953-851fa07edc74
-# ╠═e0ae1294-6efb-4b4a-9e20-292064c940cf
-# ╠═b97425a6-6538-4fc5-82de-26475275a1f8
+# ╟─e0ae1294-6efb-4b4a-9e20-292064c940cf
+# ╟─b97425a6-6538-4fc5-82de-26475275a1f8
 # ╠═a4f9ac12-a595-46d7-b8cc-870c27c4fa9e
 # ╠═ea7a825f-a545-4527-975b-ef01dc92b5c5
 # ╠═0cc39cdf-70d3-4a09-83e1-2296bc3a62ab
