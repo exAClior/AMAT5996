@@ -238,45 +238,6 @@ The energy scaling is helpful when we want to know the energy level which the el
 To estimate the rest of the quantities, we need to rely on the trick to estimate the integral of two radial part of the wavefunction mentioned in the video lecture.
 "
 
-# ╔═╡ 68afa6ad-21d4-48fc-81da-5047c208bc71
-
-
-# ╔═╡ 5c82c343-5d9d-4399-99f5-a9a5c9bfc9bb
-
-
-# ╔═╡ bd865d0b-79d0-433c-879d-a819dd8f0b69
-
-
-# ╔═╡ 32b0b550-a4d6-495e-b6ae-d00b2e527d5b
-
-
-# ╔═╡ 2482a924-f3d7-405f-983e-8b4a2c378ae2
-
-
-# ╔═╡ c4a98565-d14f-4548-b4a3-852047bbdd1d
-
-
-# ╔═╡ 4439df44-d75a-473d-957d-298d549d5854
-
-
-# ╔═╡ 7fb1c334-76f5-4419-9db9-e57ae7e26fa1
-
-
-# ╔═╡ eb7e93de-291a-41ce-92f9-3e7e68369802
-
-
-# ╔═╡ 7e3ab2f8-75f2-44c0-a3d1-12d0142005a0
-
-
-# ╔═╡ d41d54fd-f268-42ac-8b87-48c753bbbd81
-
-
-# ╔═╡ 0085976f-3f40-42bb-98f0-5e11264aa93a
-
-
-# ╔═╡ 8e514b0f-1cee-4be6-81c4-32afe4bcdaba
-
-
 # ╔═╡ f80d2269-cac2-4231-bacc-788f2a61008f
 
 md"
@@ -290,15 +251,6 @@ $\alpha ∼ \frac{(n^2)^2}{n^{-3}} = n^7$
 md"
 van der Waal's interaction coefficient???
 "
-
-# ╔═╡ 9459403d-b5d9-41ae-9761-fd4d2f485d81
-
-
-# ╔═╡ e416e726-ca0a-4b21-af27-24059803dac4
-
-
-# ╔═╡ 5d68dccc-e0a1-4e83-8319-437473c98916
-
 
 # ╔═╡ Cell order:
 # ╠═b07f1119-5968-4368-9da4-d549555901cc
@@ -337,22 +289,6 @@ van der Waal's interaction coefficient???
 # ╠═0cc39cdf-70d3-4a09-83e1-2296bc3a62ab
 # ╠═d3daec1c-6972-4024-b3e0-8a1bdc384a1d
 # ╠═0767c090-9177-42e5-bf61-3738b293bcfb
-# ╠═04e8d2fa-fe02-4baf-ac0d-c6c28bfd8aee
-# ╠═68afa6ad-21d4-48fc-81da-5047c208bc71
-# ╠═5c82c343-5d9d-4399-99f5-a9a5c9bfc9bb
-# ╠═bd865d0b-79d0-433c-879d-a819dd8f0b69
-# ╠═32b0b550-a4d6-495e-b6ae-d00b2e527d5b
-# ╠═2482a924-f3d7-405f-983e-8b4a2c378ae2
-# ╠═c4a98565-d14f-4548-b4a3-852047bbdd1d
-# ╠═4439df44-d75a-473d-957d-298d549d5854
-# ╠═7fb1c334-76f5-4419-9db9-e57ae7e26fa1
-# ╠═eb7e93de-291a-41ce-92f9-3e7e68369802
-# ╠═7e3ab2f8-75f2-44c0-a3d1-12d0142005a0
-# ╠═d41d54fd-f268-42ac-8b87-48c753bbbd81
-# ╠═0085976f-3f40-42bb-98f0-5e11264aa93a
-# ╠═8e514b0f-1cee-4be6-81c4-32afe4bcdaba
-# ╠═f80d2269-cac2-4231-bacc-788f2a61008f
-# ╠═cee00905-abb6-4dcc-993e-4c396f4a1c6b
-# ╠═9459403d-b5d9-41ae-9761-fd4d2f485d81
-# ╠═e416e726-ca0a-4b21-af27-24059803dac4
-# ╠═5d68dccc-e0a1-4e83-8319-437473c98916
+# ╟─04e8d2fa-fe02-4baf-ac0d-c6c28bfd8aee
+# ╟─f80d2269-cac2-4231-bacc-788f2a61008f
+# ╟─cee00905-abb6-4dcc-993e-4c396f4a1c6b
