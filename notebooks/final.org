@@ -1,0 +1,49 @@
+#+TITLE: Final Exam Problem Bank
+
+* Linear Algebra
+** MAT 310 II
+- P2
+- P3
+- P4
+- P5
+** MAT 310 I
+- P3
+- P4
+** NYU Final
+- P1
+- P2
+- P3
+- P4
+- P5
+- P6
+- P7
+- P8
+- P13
+** MIT Final
+- If need more come here
+
+
+* Quantum Information
+** Bacon Final
+- P1
+- P2
+- P3
+- P4
+** MIT P3
+- P1
+- P4
+- P5
+** ETH P3
+- Shor's code
+
+* Atomic Physics
+
+
+* Condensed Matter Physics
+- ...
+* General
+** Likharev
+- 2.1
+- 4.4
+- 4.9
+- 4.19
