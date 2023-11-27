@@ -1,27 +1,75 @@
 #+TITLE: Final Exam Problem Bank
 
-* Linear Algebra
+* Purely Linear Algebra
 ** MAT 310 II
-- P2
-- P3
-- P4
-- P5
-** MAT 310 I
-- P3
-- P4
-** NYU Final
-- P1
-- P2
-- P3
-- P4
-- P5
-- P6
-- P7
-- P8
-- P13
-** MIT Final
-- If need more come here
+*** P2: How to take determinant
+(15pts) Let \[ A=\left(\begin{array}{cccc} 4 & 3 & 1 & 2 \\ 1 & 9 & 0 & 2 \\ 8 &
+3 & 2 & -2 \\ 4 & 3 & 1 & 1 \end{array}\right) \]
+a) Calculate the determinant of \(A\) using any method that you know.
+b) What is the determinant of \(-2 A\) ?
 
+*** P3: Determinant and Invertibility
+(13pts) Let \(A\) and \(B\) be \(n \times n\) matrices such that \(A B=-B A\).
+Prove that if \(n\) is odd, then $A$ or $B$ is not invertible.
+
+*** P4: Diagonalizing a matrix
+(13pts) Determine if the following matrix is diagonalizable and justify your
+answer. If so, find an invertible matrix \(Q\) and a diagonal matrix \(D\) such
+that \(A=Q D Q^{-1}\).
+\[ A=\left(\begin{array}{lll} 1 & 1 & 1 \\ 0 & 1 & 0 \\ 0
+& 0 & 1 \end{array}\right) \]
+
+** MAT 310 I
+*** P3: Basis
+(15 pts) Determine whether or not \(\{(1,1,0),(2,0,-1),(-3,1,1)\}\) is a basis
+for \(\mathbb{R}^{3}\).
+
+*** P4: Rank Nullity Theorem
+(15pts) Let \(T: \mathbb{R}^{4} \rightarrow \mathbb{R}^{3}\) denote a linear
+transformation such that \(T((1,0,0,0))= (3,-1,0), T((1,1,1,1))=(-2,1,3)\), and
+\(T((0,0,1,1))=(0,1,1)\). Compute the dimension of the null space
+\(\operatorname{dim}(N(T))\). Hint:\(dim(\mathcc{R}^{4}) = rank(T) + null(T)\)
+
+** NYU Final
+*** P5: Rank Nullity Theorem
+5. Suppose $A$ is an $8 \times 7$ matrix in which $\operatorname{dim}(\operatorname{Nul} A)=6$. Then rank $A=$
+(a) 1
+(b) 2
+(c) 6
+(d) 7
+(e) 8
+*** P7: Invertibility
+ Consider the $3 \times 3$ matrix $A=\left[\begin{array}{rrr}0 & 1 & k \\ 2 & k
+ & -6 \\ 2 & 7 & 4\end{array}\right]$. For what values of $k$ is matrix $A$
+ invertible?
+
+(a) $k \in \mathbb{R}$
+(b) all real $k$ except 2 and 5
+(c) $k \geq 0$
+(d) $k=0$
+(e) no value of $k$ makes $A$ invertible
+*** P8: Definition of Eigenvector
+ $\left[\begin{array}{l}1 \\ 2 \\ 2\end{array}\right]$ is an eigenvector of
+   $\left[\begin{array}{rrr}4 & -2 & 1 \\ 2 & 0 & 1 \\ 2 & -2 &
+   3\end{array}\right]$. What is the corresponding eigenvalue?
+(a) 0
+(b) 2
+(c) 3
+(d) 7
+(e) need more information to determine eigenvalue associated with eigenvector $\left[\begin{array}{l}1 \\ 2 \\ 2\end{array}\right]$
+*** P13: Exponentiating a matrix
+(10 points) Compute $A^{2017}$ where $A=\left[\begin{array}{rr}1 & 0 \\ 2 &
+    -1\end{array}\right]$. (Hint: Diagonalize $A$.)
+
+
+
+* General
+** Sakurai
+** Likharev
+- 2.1
+- 4.4
+- 4.9
+- 4.19
 
 * Quantum Information
 ** Bacon Final
@@ -37,13 +85,7 @@
 - Shor's code
 
 * Atomic Physics
-
+** The Quantum Mechanics Solver
 
 * Condensed Matter Physics
-- ...
-* General
-** Likharev
-- 2.1
-- 4.4
-- 4.9
-- 4.19
+- Provided by Prof. Liu
