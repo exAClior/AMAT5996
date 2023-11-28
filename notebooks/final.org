@@ -28,16 +28,23 @@ for \(\mathbb{R}^{3}\).
 *** P4: Rank Nullity Theorem
 (15pts) Let \(T: \mathbb{R}^{4} \rightarrow \mathbb{R}^{3}\) denote a linear
 transformation such that \(T((1,0,0,0))= (3,-1,0), T((1,1,1,1))=(-2,1,3)\), and
-\(T((0,0,1,1))=(0,1,1)\). Compute the dimension of the null space
+\(T((0,0,1,1))=(0,1,1)\).
+
+Compute the dimension of the null space
 \(\operatorname{dim}(N(T))\). Hint:\(dim(\mathcc{R}^{4}) = rank(T) + null(T)\)
 
 ** NYU Final [2/2]
 *** P5: Rank Nullity Theorem
 5. Suppose $A$ is an $8 \times 7$ matrix in which $\operatorname{dim}(\operatorname{Nul} A)=6$. Then rank $A=$
+
 (a) 1
+
 (b) 2
+
 (c) 6
+
 (d) 7
+
 (e) 8
 *** P7: Invertibility
  Consider the $3 \times 3$ matrix $A=\left[\begin{array}{rrr}0 & 1 & k \\ 2 & k
@@ -45,29 +52,40 @@ transformation such that \(T((1,0,0,0))= (3,-1,0), T((1,1,1,1))=(-2,1,3)\), and
  invertible?
 
 (a) $k \in \mathbb{R}$
+
 (b) all real $k$ except 2 and 5
+
 (c) $k \geq 0$
+
 (d) $k=0$
+
 (e) no value of $k$ makes $A$ invertible
+
 *** P8: Definition of Eigenvector
  $\left[\begin{array}{l}1 \\ 2 \\ 2\end{array}\right]$ is an eigenvector of
    $\left[\begin{array}{rrr}4 & -2 & 1 \\ 2 & 0 & 1 \\ 2 & -2 &
    3\end{array}\right]$. What is the corresponding eigenvalue?
 (a) 0
-(b) 2
-(c) 3
-(d) 7
-(e) need more information to determine eigenvalue associated with eigenvector $\left[\begin{array}{l}1 \\ 2 \\ 2\end{array}\right]$
-*** P13: Exponentiating a matrix
-(10 points) Compute $A^{2017}$ where $A=\left[\begin{array}{rr}1 & 0 \\ 2 &
-    -1\end{array}\right]$. (Hint: Diagonalize $A$.)
 
+(b) 2
+
+(c) 3
+
+(d) 7
+
+(e) need more information to determine eigenvalue associated with eigenvector
+$\left[\begin{array}{l}1 \\ 2 \\ 2\end{array}\right]$
+*** P13: Exponentiating a matrix
+Compute $A^{2017}$ where $A=\left[\begin{array}{rr}1 & 0 \\ 2 &
+    -1\end{array}\right]$. (Hint: Diagonalize $A$.)
 
 * General [7/7]
 ** Sakurai [4/4]
 *** 1.8: Eigenvalue
 Suppose $|i\rangle$ and $|j\rangle$ are eigenkets of some Hermitian operator
-$A$. Under what condition can we conclude that $|i\rangle+|j\rangle$ is also an
+$A$.
+
+Under what condition can we conclude that $|i\rangle+|j\rangle$ is also an
 eigenket of $A$ ? Justify your answer.
 *** 1.12: Braket Notation to Matrix
 The Hamiltonian operator for a two-state system is given by $$
@@ -100,15 +118,19 @@ b. Consider a mixed ensemble of spin $\frac{1}{2}$ systems. Suppose the ensemble
    characterizes the ensemble.
 ** Likharev [3/3]
 *** 4.4: Power of Sigma Matrices
-Problem 4.4. Calculate the following expressions, (i) $(\mathbf{c} \cdot
-\boldsymbol{\sigma})^n$, and then (ii) $(b \mathrm{I}+\mathbf{c} \cdot
-\boldsymbol{\sigma})^n$, for the scalar product $\mathbf{c} \cdot
-\boldsymbol{\sigma}$ of the Pauli matrix vector $\boldsymbol{\sigma} \equiv
-\mathbf{n}_x \boldsymbol{\sigma}_x+\mathbf{n}_y \sigma_y+\mathbf{n}_z
-\boldsymbol{\sigma}_z$ by an arbitrary $c$ -number vector $\mathbf{c}$, where $n
-\geqslant 0$ is an integer, and $b$ is an arbitrary scalar $c$ number. Hint: For
-task (ii), you may like to use the binomial theorem2, and then transform the
-result in a way enabling you to use the same theorem backwards.
+Problem 4.4. Calculate the following expressions,
+
+(i) $(\mathbf{c} \cdot \boldsymbol{\sigma})^n$, and then
+
+(ii) $(b \mathrm{I}+\mathbf{c} \cdot \boldsymbol{\sigma})^n$, for the scalar product
+$\mathbf{c} \cdot \boldsymbol{\sigma}$ of the Pauli matrix vector $\boldsymbol{\sigma} \equiv
+\mathbf{n}_x \boldsymbol{\sigma}_x+\mathbf{n}_y \sigma_y+\mathbf{n}_z \boldsymbol{\sigma}_z$ by
+an arbitrary $c$ -number vector $\mathbf{c}$, where $n \geqslant 0$ is an integer, and
+$b$ is an arbitrary scalar $c$ number.
+
+Hint: For task (ii), you may like to use
+the binomial theorem2, and then transform the result in a way enabling you to
+use the same theorem backwards.
 
 *** 4.19: Eigenvalue and Measurement
 Problem 4.19. In a certain basis, the Hamiltonian of a two-level system is
@@ -122,7 +144,7 @@ possible results of measurements of the observable $A$ and the probabilities of
 the corresponding measurement outcomes.
 
 *** 4.23: Anticommutation and Eigenvalue
-Problem 4.23. A certain state $\gamma$ is an eigenstate of each of two operators
+A certain state $\gamma$ is an eigenstate of each of two operators
 $\hat{A}$ and $\hat{B}$. What can be said about the corresponding eigenvalues
 $a$ and $b$, if the operators anticommute?
 
@@ -195,39 +217,54 @@ Problem 2.1. The initial wave packet of a free 1D particle is described by Eq. (
 $$
 \Psi(x, 0)=\int a_k e^{i k x} d k
 $$
-(i) Obtain a compact expression for the expectation value $\langle p\rangle$ of the particle's momentum. Does $\langle p\rangle$ depend on time?
-(ii) Calculate $\langle p\rangle$ for the case when the function $\left|a_k\right|^2$ is symmetric with respect to some value $k_0$.
+
+(i) Obtain a compact expression for the expectation value $\langle p\rangle$ of the
+particle's momentum. Does $\langle p\rangle$ depend on time?
+
+(ii) Calculate $\langle p\rangle$ for the case when the function $\left|a_k\right|^2$ is
+symmetric with respect to some value $k_0$.
+
 *** 5.2: Ladder Operator and Heisenberg Picture
 Problem 5.2. A spin- $1 / 2$ is placed into an external magnetic field, with a
 timeindependent orientation, its magnitude $\mathscr{B}(t)$ being an arbitrary
 function of time. Find explicit expressions for the Heisenberg operators and the
 expectation values of all three Cartesian components of the spin, as functions
 of time, in a coordinate system of your choice.
+
 *** 5.9: Fock State and Ladder Operator
 Problem 5.9. For a $1 \mathrm{D}$ harmonic oscillator with mass $m$ and
-frequency $\omega_0$, calculate: (i) all matrix elements $\left\langle
-n\left|\hat{x}^3\right| n^{\prime}\right\rangle$, and (ii) the diagonal matrix
-elements $\left\langle n\left|\hat{x}^4\right| n\right\rangle$, where $n$ and
-$n^{\prime}$ are arbitrary Fock states. Note,
-\(\begin{aligned}
-\left\langle n^{\prime}|\hat{x}| n\right\rangle & =\frac{x_0}{\sqrt{2}}\left[n^{1 / 2} \delta_{n^{\prime}, n-1}+(n+1)^{1 / 2} \delta_{n^{\prime}, n+1}\right] \\
-& \equiv\left(\frac{\hbar}{2 m \omega_0}\right)^{1 / 2}\left[n^{1 / 2} \delta_{n^{\prime}, n-1}+(n+1)^{1 / 2} \delta_{n^{\prime}, n+1}\right]
-\end{aligned}\)
+frequency $\omega_0$, calculate:
+
+(i) all matrix elements $\left\langle n\left|\hat{x}^3\right| n^{\prime}\right\rangle$,
+
+and (ii) the diagonal matrix elements $\left\langle n\left|\hat{x}^4\right| n\right\rangle$,
+where $n$ and $n^{\prime}$ are arbitrary Fock states.
 
 
-and \( \begin{aligned}
-\left\langle n^{\prime}|\hat{x}^{2}| n\right\rangle & = \frac{x_0^2}{2}\left\{[n(n-1)]^{1 / 2} \delta_{n^{\prime}, n-2}\right. \\
-& \left.+[(n+1)(n+2)]^{1 / 2} \delta_{n^{\prime}, n+2}+(2 n+1) \delta_{n^{\prime}, n}\right\} .
+Note, \(\begin{aligned} \left\langle n^{\prime}|\hat{x}| n\right\rangle &
+=\frac{x_0}{\sqrt{2}}\left[n^{1 / 2} \delta_{n^{\prime}, n-1}+(n+1)^{1 / 2} \delta_{n^{\prime},
+n+1}\right] \\ & \equiv\left(\frac{\hbar}{2 m \omega_0}\right)^{1 / 2}\left[n^{1 / 2}
+\delta_{n^{\prime}, n-1}+(n+1)^{1 / 2} \delta_{n^{\prime}, n+1}\right] \end{aligned}\)
+
+and \( \begin{aligned} \left\langle n^{\prime}|\hat{x}^{2}| n\right\rangle & =
+\frac{x_0^2}{2}\left\{[n(n-1)]^{1 / 2} \delta_{n^{\prime}, n-2}\right. \\ &
+\left.+[(n+1)(n+2)]^{1 / 2} \delta_{n^{\prime}, n+2}+(2 n+1) \delta_{n^{\prime}, n}\right\} .
 \end{aligned}\)
+
 *** 5.23: Ladder Operator and Angular Momentum
 In the basis of the common eigenstates of the operators $\hat{L}_z$ and
-$\hat{L}^2$, described by kets $|l, m\rangle$ : (i) calculate the matrix
-elements $\left\langle l, m_1\left|\hat{L}_x\right| l, m_2\right\rangle$ and
-$\left\langle l, m_1\left|\hat{L}_x^2\right| l, m_2\right\rangle$; (ii) spell
-out your results for the diagonal matrix elements (with $m_1=m_2$ ) and their
-$y$-axis counterparts; and (iii) calculate the diagonal matrix elements
-$\left\langle l, m\left|\hat{L}_x \hat{L}_y\right| l, m\right\rangle$ and
-$\left\langle l, m\left|\hat{L}_y \hat{L}_x\right| l, m\right\rangle$.
+$\hat{L}^2$, described by kets $|l, m\rangle$:
+
+(i) calculate the matrix elements $\left\langle l, m_1\left|\hat{L}_x\right| l,
+m_2\right\rangle$ and $\left\langle l, m_1\left|\hat{L}_x^2\right| l, m_2\right\rangle$;
+
+(ii) spell out your results for the diagonal matrix elements (with $m_1=m_2$ )
+and their $y$-axis counterparts;
+
+and (iii) calculate the diagonal matrix elements $\left\langle l, m\left|\hat{L}_x
+\hat{L}_y\right| l, m\right\rangle$ and $\left\langle l, m\left|\hat{L}_y \hat{L}_x\right|
+l, m\right\rangle$.
+
 ** The Quantum Mechanics Solver [3/3]
 *** 6.1: Hyperfine Splitting
 Give the degeneracy of the ground state if one neglects the magnetic interaction
@@ -236,6 +273,7 @@ between the nucleus and the external electron. We note $$
 electron : } s_{\mathrm{e}}=1 / 2, m_{\mathrm{e}}\right\rangle \otimes \mid
 \text { nucleus : } s_{\mathrm{n}}, m_{\mathrm{n}}\right\rangle $$ a basis of
 the total spin states (external electron + nucleus).
+
 *** 6.2: Energy Level of Hyperfine Splitting
 We now take into account the interaction between the electron magnetic moment
 $\mu_{\mathrm{e}}$ and the nuclear magnetic moment $\mu_{\mathrm{n}}$. As in the
@@ -243,66 +281,80 @@ hydrogen atom, one can write the corresponding Hamiltonian (restricted to the
 spin subspace) as: $$ \hat{H}=\frac{A}{\hbar^2}
 \hat{\boldsymbol{S}}_{\mathrm{e}} \cdot \hat{\boldsymbol{S}}_{\mathrm{n}}, $$
 
-where $A$ is a characteristic energy, and where $\hat{\boldsymbol{S}}_{\mathrm{e}}$ and $\hat{\boldsymbol{S}}_{\mathrm{n}}$ are the spin operators of the electron and the nucleus, respectively. We want to find the eigenvalues of this Hamiltonian.
-We introduce the operators $\hat{S}_{\mathrm{e}, \pm}=\hat{S}_{\mathrm{e}, x} \pm i \hat{S}_{\mathrm{e}, y}$ and $\hat{S}_{\mathrm{n}, \pm}=\hat{S}_{\mathrm{n}, x} \pm i \hat{S}_{\mathrm{n}, y}$.
-(a) Show that
-$$
-\hat{H}=\frac{A}{2 \hbar^2}\left(\hat{S}_{\mathrm{e},+} \hat{S}_{\mathrm{n},-}+\hat{S}_{\mathrm{e},-} \hat{S}_{\mathrm{n},+}+2 \hat{S}_{\mathrm{e}, z} \hat{S}_{\mathrm{n}, z}\right)
-$$
-(b) Show that the two states
-$$
-\left|m_{\mathrm{e}}=1 / 2 ; m_{\mathrm{n}}=s_{\mathrm{n}}\right\rangle \quad \text { and } \quad\left|m_{\mathrm{e}}=-1 / 2 ; m_{\mathrm{n}}=-s_{\mathrm{n}}\right\rangle
-$$
-are eigenstates of $\hat{H}$, and give the corresponding eigenvalues.
-(c) What is the action of $\hat{H}$ on the state $\left|m_{\mathrm{e}}=1 / 2 ; m_{\mathrm{n}}\right\rangle$ with $m_{\mathrm{n}} \neq s_{\mathrm{n}}$ ?
-What is the action of $\hat{H}$ on the state $\left|m_{\mathrm{e}}=-1 / 2 ; m_{\mathrm{n}}\right\rangle$ with $m_{\mathrm{n}} \neq-s_{\mathrm{n}}$ ?
-(d) Deduce from these results that the eigenvalues of $\hat{H}$ can be calculated by diagonalizing $2 \times 2$ matrices of the type:
-$$
-\frac{A}{2}\left(\begin{array}{lr}
-m_{\mathrm{n}} & \sqrt{s_{\mathrm{n}}\left(s_{\mathrm{n}}+1\right)-m_{\mathrm{n}}\left(m_{\mathrm{n}}+1\right)} \\
-\sqrt{s_{\mathrm{n}}\left(s_{\mathrm{n}}+1\right)-m_{\mathrm{n}}\left(m_{\mathrm{n}}+1\right)} & -\left(m_{\mathrm{n}}+1\right)
-\end{array}\right) .
-$$
+where $A$ is a characteristic energy, and where
+$\hat{\boldsymbol{S}}_{\mathrm{e}}$ and $\hat{\boldsymbol{S}}_{\mathrm{n}}$ are
+the spin operators of the electron and the nucleus, respectively. We want to
+find the eigenvalues of this Hamiltonian.
+
+We introduce the operators $\hat{S}_{\mathrm{e}, \pm}=\hat{S}_{\mathrm{e}, x} \pm i
+\hat{S}_{\mathrm{e}, y}$ and $\hat{S}_{\mathrm{n}, \pm}=\hat{S}_{\mathrm{n}, x} \pm
+i \hat{S}_{\mathrm{n}, y}$.
+
+(a) Show that $$ \hat{H}=\frac{A}{2 \hbar^2}\left(\hat{S}_{\mathrm{e},+}
+\hat{S}_{\mathrm{n},-}+\hat{S}_{\mathrm{e},-} \hat{S}_{\mathrm{n},+}+2
+\hat{S}_{\mathrm{e}, z} \hat{S}_{\mathrm{n}, z}\right) $$
+
+(b) Show that the two states $$ \left|m_{\mathrm{e}}=1 / 2 ;
+m_{\mathrm{n}}=s_{\mathrm{n}}\right\rangle \quad \text { and } \quad\left|m_{\mathrm{e}}=-1 /
+2 ; m_{\mathrm{n}}=-s_{\mathrm{n}}\right\rangle $$ are eigenstates of $\hat{H}$, and
+give the corresponding eigenvalues.
+
+(c) What is the action of $\hat{H}$ on the state $\left|m_{\mathrm{e}}=1 / 2 ;
+m_{\mathrm{n}}\right\rangle$ with $m_{\mathrm{n}} \neq s_{\mathrm{n}}$ ? What is the
+action of $\hat{H}$ on the state $\left|m_{\mathrm{e}}=-1 / 2 ;
+m_{\mathrm{n}}\right\rangle$ with $m_{\mathrm{n}} \neq-s_{\mathrm{n}}$ ? (d) Deduce from
+these results that the eigenvalues of $\hat{H}$ can be calculated by
+diagonalizing $2 \times 2$ matrices of the type: $$
+\frac{A}{2}\left(\begin{array}{lr} m_{\mathrm{n}} &
+\sqrt{s_{\mathrm{n}}\left(s_{\mathrm{n}}+1\right)-m_{\mathrm{n}}\left(m_{\mathrm{n}}+1\right)}
+\\ \sqrt{s_{\mathrm{n}}\left(s_{\mathrm{n}}+1\right)-m_{\mathrm{n}}\left(m_{\mathrm{n}}+1\right)}
+& -\left(m_{\mathrm{n}}+1\right) \end{array}\right) . $$
+
 *** 7.3.1: Zeeman Effect
-The system is placed in a constant uniform magnetic field $\boldsymbol{B}$ directed along the $z$ axis. The additional Zeeman Hamiltonian has the form
-$$
-\hat{H}_{\mathrm{Z}}=\omega_1 \hat{S}_{1 z}+\omega_2 \hat{S}_{2 z}
-$$
-where $\omega_1=-\gamma_1 B$ and $\omega_2=-\gamma_2 B$.
-7.3.1 Matrix representation of the Zeeman Hamiltonian
-(a) Taking into account the result of question 7.2.2 and setting $\omega=-\gamma B$, write the action of $\hat{H}_Z$ on the basis states $\left\{\left|\sigma_1, \sigma_2\right\rangle\right\}$.
-(b) Write in terms of $A$ and $\hbar \omega$ the matrix representation of
-$$
-\hat{H}=\hat{H}_{\mathrm{SS}}+\hat{H}_{\mathrm{A}}+\hat{H}_{\mathrm{Z}}
-$$
-in the basis $\{|S, m\rangle\}$ of the total spin of the two particles.
-(c) Give the numerical value of $\hbar \omega$ in $\mathrm{eV}$ for a field $B=1 \mathrm{~T}$. Is it easy experimentally to be in a strong field regime, i.e. $\hbar \omega \gg A$ ?
+The system is placed in a constant uniform magnetic field $\boldsymbol{B}$
+directed along the $z$ axis. The additional Zeeman Hamiltonian has the form $$
+\hat{H}_{\mathrm{Z}}=\omega_1 \hat{S}_{1 z}+\omega_2 \hat{S}_{2 z} $$ where $\omega_1=-\gamma_1 B$
+and $\omega_2=-\gamma_2 B$. 7.3.1 Matrix representation of the Zeeman Hamiltonian
+
+(a) Taking into account the result of question 7.2.2 and setting $\omega=-\gamma B$, write
+the action of $\hat{H}_Z$ on the basis states $\left\{\left|\sigma_1,
+\sigma_2\right\rangle\right\}$.
+
+(b) Write in terms of $A$ and $\hbar \omega$ the matrix representation of $$
+\hat{H}=\hat{H}_{\mathrm{SS}}+\hat{H}_{\mathrm{A}}+\hat{H}_{\mathrm{Z}} $$ in
+the basis $\{|S, m\rangle\}$ of the total spin of the two particles.
+
+(c) Give the numerical value of $\hbar \omega$ in $\mathrm{eV}$ for a field $B=1
+\mathrm{~T}$. Is it easy experimentally to be in a strong field regime, i.e. $\hbar
+\omega \gg A$ ?
 * Quantum Information [10/10]
 ** Bacon Final [4/4]
 *** P1
-Problem 1: One Qubit! (30 pts)
-In this problem you have been given a single qubit which has the wave function given by the ket $|\psi\rangle=\frac{1}{\sqrt{2}}|0\rangle+\frac{1+i}{2}|1\rangle$.
-(a) (4 pts) What is the bra $\langle\psi|$ corresponding to this ket?
-(b) (4 pts) Is this wave function normalized? This is, does $\langle\psi \mid \psi\rangle=1$ ?
-(c) $(6 \mathrm{pts})$ If you measure this qubit in the computational basis, $|0\rangle,|1\rangle$, what are the probabilities of these two outcomes?
-(d) (6 pts) Suppose we apply the unitary
-$$
-U=\left[\begin{array}{cc}
-1 & 0 \\
-0 & \frac{1-i}{\sqrt{2}}
-\end{array}\right]
-$$
-to the qubit in the wave function $|\psi\rangle$. What is the new wave function $U|\psi\rangle$ ?
-(e) $(6 \mathrm{pts})$ Recall that the Hadamard matrix is
-$$
-H=\left[\begin{array}{cc}
-\frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}} \\
-\frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}}
-\end{array}\right]
-$$
+Problem 1: One Qubit! (30 pts) In this problem you have been given a single
+qubit which has the wave function given by the ket
+$|\psi\rangle=\frac{1}{\sqrt{2}}|0\rangle+\frac{1+i}{2}|1\rangle$.
 
-If we first apply $U$ from part (d) followed by the Hadamard matrix, this is the same as applying the unitary $H U$. What is the two by two matrix $H U$ ?
-(f) (4 pts) Suppose we start with one qubit which has the wave function $|\psi\rangle$. Next we apply $U$ from part (d). Then we apply the Hadamard $H$. What is the final qubit wave function? That is, what is $H U|\psi\rangle$ ?
+(a) (4 pts) What is the bra $\langle\psi|$ corresponding to this ket?
+
+(b) (4 pts) Is this wave function normalized? This is, does $\langle\psi \mid \psi\rangle=1$ ?
+
+(c) $(6 \mathrm{pts})$ If you measure this qubit in the computational basis,
+$|0\rangle,|1\rangle$, what are the probabilities of these two outcomes?
+
+(d) (6 pts) Suppose we apply the unitary $$ U=\left[\begin{array}{cc} 1 & 0 \\ 0
+& \frac{1-i}{\sqrt{2}} \end{array}\right] $$ to the qubit in the wave function
+$|\psi\rangle$. What is the new wave function $U|\psi\rangle$ ?
+
+(e) $(6 \mathrm{pts})$ Recall that the Hadamard matrix is $$
+H=\left[\begin{array}{cc} \frac{1}{\sqrt{2}} & \frac{1}{\sqrt{2}}
+\\ \frac{1}{\sqrt{2}} & -\frac{1}{\sqrt{2}} \end{array}\right] $$
+
+If we first apply $U$ from part (d) followed by the Hadamard matrix, this is the
+same as applying the unitary $H U$. What is the two by two matrix $H U$ ? (f) (4
+pts) Suppose we start with one qubit which has the wave function $|\psi\rangle$. Next we
+apply $U$ from part (d). Then we apply the Hadamard $H$. What is the final qubit
+wave function? That is, what is $H U|\psi\rangle$ ?
+
 *** P2
 Problem 2: Two Qubits! (40 pts)
 In this problem we have been given two qubits with the wave function $|\phi\rangle=\frac{1}{2}|01\rangle+\frac{\sqrt{3}}{2}|10\rangle$.
