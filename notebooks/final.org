@@ -1,121 +1,8 @@
 #+TITLE: Final Exam Problem Bank
 * Total [36/50]
 
-* Purely Linear Algebra [7/7]
-** MAT 310 II [3/3]
-*** P2: How to take determinant
-(15pts) Let \[ A=\left(\begin{array}{cccc} 4 & 3 & 1 & 2 \\ 1 & 9 & 0 & 2 \\ 8 &
-3 & 2 & -2 \\ 4 & 3 & 1 & 1 \end{array}\right) \]
-a) Calculate the determinant of \(A\) using any method that you know.
-b) What is the determinant of \(-2 A\) ?
-
-*** P3: Determinant and Invertibility
-(13pts) Let \(A\) and \(B\) be \(n \times n\) matrices such that \(A B=-B A\).
-Prove that if \(n\) is odd, then $A$ or $B$ is not invertible.
-
-*** P4: Diagonalizing a matrix
-(13pts) Determine if the following matrix is diagonalizable and justify your
-answer. If so, find an invertible matrix \(Q\) and a diagonal matrix \(D\) such
-that \(A=Q D Q^{-1}\).
-\[ A=\left(\begin{array}{lll} 1 & 1 & 1 \\ 0 & 1 & 0 \\ 0
-& 0 & 1 \end{array}\right) \]
-
-** MAT 310 I [2/2]
-*** P3: Basis
-(15 pts) Determine whether or not \(\{(1,1,0),(2,0,-1),(-3,1,1)\}\) is a basis
-for \(\mathbb{R}^{3}\).
-
-*** P4: Rank Nullity Theorem
-(15pts) Let \(T: \mathbb{R}^{4} \rightarrow \mathbb{R}^{3}\) denote a linear
-transformation such that \(T((1,0,0,0))= (3,-1,0), T((1,1,1,1))=(-2,1,3)\), and
-\(T((0,0,1,1))=(0,1,1)\).
-
-Compute the dimension of the null space
-\(\operatorname{dim}(N(T))\). Hint:\(dim(\mathcc{R}^{4}) = rank(T) + null(T)\)
-
-** NYU Final [2/2]
-*** P5: Rank Nullity Theorem
-5. Suppose $A$ is an $8 \times 7$ matrix in which $\operatorname{dim}(\operatorname{Nul} A)=6$. Then rank $A=$
-
-(a) 1
-
-(b) 2
-
-(c) 6
-
-(d) 7
-
-(e) 8
-*** P7: Invertibility
- Consider the $3 \times 3$ matrix $A=\left[\begin{array}{rrr}0 & 1 & k \\ 2 & k
- & -6 \\ 2 & 7 & 4\end{array}\right]$. For what values of $k$ is matrix $A$
- invertible?
-
-(a) $k \in \mathbb{R}$
-
-(b) all real $k$ except 2 and 5
-
-(c) $k \geq 0$
-
-(d) $k=0$
-
-(e) no value of $k$ makes $A$ invertible
-
-*** P8: Definition of Eigenvector
- $\left[\begin{array}{l}1 \\ 2 \\ 2\end{array}\right]$ is an eigenvector of
-   $\left[\begin{array}{rrr}4 & -2 & 1 \\ 2 & 0 & 1 \\ 2 & -2 &
-   3\end{array}\right]$. What is the corresponding eigenvalue?
-(a) 0
-
-(b) 2
-
-(c) 3
-
-(d) 7
-
-(e) need more information to determine eigenvalue associated with eigenvector
-$\left[\begin{array}{l}1 \\ 2 \\ 2\end{array}\right]$
-*** P13: Exponentiating a matrix
-Compute $A^{2017}$ where $A=\left[\begin{array}{rr}1 & 0 \\ 2 &
-    -1\end{array}\right]$. (Hint: Diagonalize $A$.)
-
 * General [7/7]
 ** Sakurai [4/4]
-*** 1.8: Eigenvalue
-Suppose $|i\rangle$ and $|j\rangle$ are eigenkets of some Hermitian operator
-$A$.
-
-Under what condition can we conclude that $|i\rangle+|j\rangle$ is also an
-eigenket of $A$ ? Justify your answer.
-*** 1.12: Braket Notation to Matrix
-The Hamiltonian operator for a two-state system is given by $$
-H=a(|1\rangle\langle 1|-| 2\rangle\langle 2|+| 1\rangle\langle 2|+|
-2\rangle\langle 1|), $$ where $a$ is a number with the dimension of energy. Find
-the energy eigenvalues and the corresponding energy eigenkets (as linear
-combinations of $|1\rangle$ and $|2\rangle$ ).
-*** 2.8: Heisenberg Picture
-2.8 Consider a free-particle wave packet in one dimension. At $t=0$ it satisfies the minimum uncertainty relation
-$$
-\left\langle(\Delta x)^2\right\rangle\left\langle(\Delta p)^2\right\rangle=\frac{\bar{h}^2}{4} \quad(t=0) .
-$$
-
-In addition, we know
-$$
-\langle x\rangle=\langle p\rangle=0 \quad(t=0) .
-$$
-
-Using the Heisenberg picture, obtain $\left\langle(\Delta x)^2\right\rangle_t$ as a function of $t(t \geq 0)$ when $\left\langle(\Delta x)^2\right\rangle_{t=0}$ is given. (Hint: Take advantage of the property of the minimumuncertainty wave packet you worked out in Chapter 1, Problem 1.20.)
-*** 3.12: State Representation
-a. Consider a pure ensemble of identically prepared spin $\frac{1}{2}$ systems.
-   Suppose the expectation values $\left\langle S_x\right\rangle$ and
-   $\left\langle S_z\right\rangle$ and the sign of $\left\langle
-   S_y\right\rangle$ are known. Show how we may determine the state vector. Why
-   is it unnecessary to know the magnitude of $\left\langle S_y\right\rangle$ ?
-
-b. Consider a mixed ensemble of spin $\frac{1}{2}$ systems. Suppose the ensemble
-   averages $\left[S_x\right],\left[S_y\right]$, and $\left[S_z\right]$ are all
-   known. Show how we may construct the $2 \times 2$ density matrix that
-   characterizes the ensemble.
 ** Likharev [3/3]
 *** 4.4: Power of Sigma Matrices
 Problem 4.4. Calculate the following expressions,
@@ -126,7 +13,8 @@ Problem 4.4. Calculate the following expressions,
 $\mathbf{c} \cdot \boldsymbol{\sigma}$ of the Pauli matrix vector $\boldsymbol{\sigma} \equiv
 \mathbf{n}_x \boldsymbol{\sigma}_x+\mathbf{n}_y \sigma_y+\mathbf{n}_z \boldsymbol{\sigma}_z$ by
 an arbitrary $c$ -number vector $\mathbf{c}$, where $n \geqslant 0$ is an integer, and
-$b$ is an arbitrary scalar $c$ number.
+$b$ is an arbitrary scalar $c$ number. (Change this to bI + i |c| \sigma, to use
+exponential form)
 
 Hint: For task (ii), you may like to use
 the binomial theorem2, and then transform the result in a way enabling you to
@@ -266,6 +154,7 @@ and (iii) calculate the diagonal matrix elements $\left\langle l, m\left|\hat{L}
 l, m\right\rangle$.
 
 ** The Quantum Mechanics Solver [3/3]
+- which operators commute with \( \vec{\sigma_{b}}\)
 *** 6.1: Hyperfine Splitting
 Give the degeneracy of the ground state if one neglects the magnetic interaction
 between the nucleus and the external electron. We note $$
@@ -461,5 +350,155 @@ is the state of the bottom two qubits? (4 points)
 (c) If \(|\langle\chi \mid \phi\rangle|=\alpha\), with what probability is the
 measurement result zero? (10 points)
 
+
+
+
 * Condensed Matter Physics [0/14]
 - Provided by Prof. Liu
+
+* Sakurai
+** Chapter 1
+*** 1.2
+Prove $$
+[A B, C D]=-A C\{D, B\}+A\{C, B\} D-C\{D, A\} B+\{C, A\} D B
+$$
+
+*** 1.4
+Suppose a $2 \times 2$ matrix $X$ (not necessarily Hermitian, nor unitary) is written as
+$$
+X=a_0+\sigma \cdot \mathbf{a},
+$$
+where the matrices $\sigma$ are given in (3.50) and $a_0$ and $a_{1,2,3}$ are numbers.
+
+a. How are $a_0$ and $a_k(k=1,2,3)$ related to $\operatorname{tr}(X)$ and $\operatorname{tr}\left(\sigma_k X\right)$ ?
+
+b. Obtain $a_0$ and $a_k$ in terms of the matrix elements $X_{i j}$.
+
+*** 1.6
+Using the rules of bra-ket algebra, prove or evaluate the following:
+
+a. $\operatorname{tr}(X Y)=\operatorname{tr}(Y X)$, where $X$ and $Y$ are operators;
+
+b. $(X Y)^{\dagger}=Y^{\dagger} X^{\dagger}$, where $X$ and $Y$ are operators;
+
+c. $\exp [i f(A)]=$ ? in ket-bra form, where $A$ is a Hermitian operator whose eigenvalues are known;
+
+d. $\sum_{a^{\prime}} \psi_{a^{\prime}}^*\left(\mathbf{x}^{\prime}\right) \psi_{a^{\prime}}\left(\mathbf{x}^{\prime \prime}\right)$, where $\psi_{a^{\prime}}\left(\mathbf{x}^{\prime}\right)=\left\langle\mathbf{x}^{\prime} \mid a^{\prime}\right\rangle$.
+
+*** 1.7
+a. Consider two kets $|\alpha\rangle$ and $|\beta\rangle$. Suppose $\left\langle a^{\prime} \mid \alpha\right\rangle,\left\langle a^{\prime \prime} \mid \alpha\right\rangle, \ldots$ and $\left\langle a^{\prime} \mid \beta\right\rangle,\left\langle a^{\prime \prime} \mid \beta\right\rangle, \ldots$ are all known, where $\left|a^{\prime}\right\rangle,\left|a^{\prime \prime}\right\rangle, \ldots$ form a complete set of base kets. Find the matrix representation of the operator $|\alpha\rangle\langle\beta|$ in that basis.
+b. We now consider a spin $\frac{1}{2}$ system and let $|\alpha\rangle$ and $|\beta\rangle$ be $\left|S_z ;+\right\rangle$ and $\left|S_x ;+\right\rangle$, respectively. Write down explicitly the square matrix that corresponds to $|\alpha\rangle\langle\beta|$ in the usual ( $s_z$ diagonal) basis.
+
+*** 1.8: Eigenvalue
+Suppose $|i\rangle$ and $|j\rangle$ are eigenkets of some Hermitian operator
+$A$.
+
+Under what condition can we conclude that $|i\rangle+|j\rangle$ is also an
+eigenket of $A$ ? Justify your answer.
+
+*** 1.10
+1.10 Using the orthonormality of $|+\rangle$ and $|-\rangle$, prove
+$$
+\left[S_i, S_j\right]=i \varepsilon_{i j k} \hbar S_k, \quad\left\{S_i, S_j\right\}=\left(\frac{\hbar^2}{2}\right) \delta_{i j},
+$$
+where
+$$
+\begin{aligned}
+& S_x=\frac{\hbar}{2}(|+\rangle\langle-|+|-\rangle\langle+|), \quad S_y=\frac{i \hbar}{2}(-|+\rangle\langle-|+|-\rangle\langle+|), \\
+& S_z=\frac{\hbar}{2}(|+\rangle\langle+|-|-\rangle\langle-|) .
+\end{aligned}
+$$
+
+*** 1.12: Braket Notation to Matrix
+The Hamiltonian operator for a two-state system is given by $$
+H=a(|1\rangle\langle 1|-| 2\rangle\langle 2|+| 1\rangle\langle 2|+|
+2\rangle\langle 1|), $$ where $a$ is a number with the dimension of energy. Find
+the energy eigenvalues and the corresponding energy eigenkets (as linear
+combinations of $|1\rangle$ and $|2\rangle$ ).
+
+*** 1.13
+A two-state system is characterized by the Hamiltonian
+$$
+H=H_{11}|1\rangle\left\langle 1\left|+H_{22}\right| 2\right\rangle\langle 2|+H_{12}[|1\rangle\langle 2|+| 2\rangle\langle 1|]
+$$
+where $H_{11}, H_{22}$, and $H_{12}$ are real numbers with the dimension of energy, and $|1\rangle$ and $|2\rangle$ are eigenkets of some observable $(\neq H)$. Find the energy eigenkets and corresponding energy eigenvalues. Make sure that your answer makes good sense for $H_{12}=0$.
+1.14 A spin $\frac{1}{2}$ system is known to be in an eigenstate of $\mathbf{S} \cdot \hat{\mathbf{n}}$ with eigenvalue $\hbar / 2$, where $\hat{\mathbf{n}}$ is a unit vector lying in the $x z$-plane that makes an angle $\gamma$ with the positive $z$-axis.
+a. Suppose $S_x$ is measured. What is the probability of getting $+\hbar / 2$ ?
+b. Evaluate the dispersion in $S_x$, that is,
+$$
+\left\langle\left(S_x-\left\langle S_x\right\rangle\right)^2\right\rangle
+$$
+(For your own peace of mind check your answers for the special cases $\gamma=0, \pi / 2$, and $\pi$.)
+*** 1.14
+A spin $\frac{1}{2}$ system is known to be in an eigenstate of $\mathbf{S} \cdot \hat{\mathbf{n}}$ with eigenvalue $\hbar / 2$, where $\hat{\mathbf{n}}$ is a unit vector lying in the $x z$-plane that makes an angle $\gamma$ with the positive $z$-axis.
+a. Suppose $S_x$ is measured. What is the probability of getting $+\hbar / 2$ ?
+b. Evaluate the dispersion in $S_x$, that is,
+$$
+\left\langle\left(S_x-\left\langle S_x\right\rangle\right)^2\right\rangle
+$$
+(For your own peace of mind check your answers for the special cases $\gamma=0, \pi / 2$, and $\pi$.)
+*** 1.15
+A beam of spin $\frac{1}{2}$ atoms goes through a series of Stern-Gerlach type measurements as follows.
+a. The first measurement accepts $s_z=\hbar / 2$ atoms and rejects $s_z=-\hbar / 2$ atoms.
+b. The second measurement accepts $s_n=\hbar / 2$ atoms and rejects $s_n=-\hbar / 2$ atoms, where $s_n$ is the eigenvalue of the operator $\mathbf{S} \cdot \hat{\mathbf{n}}$, with $\hat{\mathbf{n}}$ making an angle $\beta$ in the $x z$-plane with respect to the $z$-axis.
+c. The third measurement accepts $s_z=-\hbar / 2$ atoms and rejects $s_z=\hbar / 2$ atoms.
+What is the intensity of the final $s_z=-\hbar / 2$ beam when the $s_z=\hbar / 2$ beam surviving the first measurement is normalized to unity? How must we orient the second measuring apparatus if we are to maximize the intensity of the final $s_z=-\hbar / 2$ beam?
+*** 1.18
+Two Hermitian operators anticommute:
+$$
+\{A, B\}=A B+B A=0 .
+$$
+
+Is it possible to have a simultaneous (that is, common) eigenket of $A$ and $B$ ? Prove or illustrate your assertion.
+*** 1.19
+Two observables $A_1$ and $A_2$, which do not involve time explicitly, are known not to commute,
+$$
+\left[A_1, A_2\right] \neq 0
+$$
+yet we also know that $A_1$ and $A_2$ both commute with the Hamiltonian:
+$$
+\left[A_1, H\right]=0, \quad\left[A_2, H\right]=0
+$$
+
+Prove that the energy eigenstates are, in general, degenerate. Are there exceptions? As an example, you may think of the central-force problem $H=\mathbf{p}^2 / 2 m+V(r)$, with $A_1 \rightarrow L_z, A_2 \rightarrow L_x$
+*** 1.26
+a. Prove that $(1 / \sqrt{2})\left(1+i \sigma_x\right)$, where the matrix $\sigma_x$ is given in (3.50), acting on a two-component spinor can be regarded as the matrix representation of the rotation operator about the $x$-axis by angle $-\pi / 2$. (The minus sign signifies that the rotation is clockwise.)
+
+b. Construct the matrix representation of $S_z$ when the eigenkets of $S_y$ are used as base vectors.
+
+*** 1.28
+Construct the transformation matrix that connects the $S_z$ diagonal basis to the $S_x$ diagonal basis. Show that your result is consistent with the general relation
+$$
+U=\sum_r\left|b^{(r)}\right\rangle\left\langle a^{(r)}\right|
+$$
+
+** Chapter 2
+
+*** 2.8: Heisenberg Picture
+2.8 Consider a free-particle wave packet in one dimension. At $t=0$ it satisfies the minimum uncertainty relation
+$$
+\left\langle(\Delta x)^2\right\rangle\left\langle(\Delta p)^2\right\rangle=\frac{\bar{h}^2}{4} \quad(t=0) .
+$$
+
+In addition, we know
+$$
+\langle x\rangle=\langle p\rangle=0 \quad(t=0) .
+$$
+
+Using the Heisenberg picture, obtain $\left\langle(\Delta x)^2\right\rangle_t$ as a function of $t(t \geq 0)$ when $\left\langle(\Delta x)^2\right\rangle_{t=0}$ is given. (Hint: Take advantage of the property of the minimumuncertainty wave packet you worked out in Chapter 1, Problem 1.20.)
+** Chapter 3
+*** 3.12: State Representation
+a. Consider a pure ensemble of identically prepared spin $\frac{1}{2}$ systems.
+   Suppose the expectation values $\left\langle S_x\right\rangle$ and
+   $\left\langle S_z\right\rangle$ and the sign of $\left\langle
+   S_y\right\rangle$ are known. Show how we may determine the state vector. Why
+   is it unnecessary to know the magnitude of $\left\langle S_y\right\rangle$ ?
+
+b. Consider a mixed ensemble of spin $\frac{1}{2}$ systems. Suppose the ensemble
+   averages $\left[S_x\right],\left[S_y\right]$, and $\left[S_z\right]$ are all
+   known. Show how we may construct the $2 \times 2$ density matrix that
+   characterizes the ensemble.
+
+** Chapter 4
+
+** Chapter 5
